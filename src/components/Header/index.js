@@ -5,7 +5,7 @@ import clockIcon from '../../images/clock-icon.png';
 import boxIcon from '../../images/box-icon.png';
 import iphoneMock from '../../images/iphonemock.png';
 
-const HeaderWrapper = styled.header`
+const MainWrapper = styled.header`
   width: 100%;
   height: 763px;
   display: flex;
@@ -29,20 +29,20 @@ const FeatureBox = styled.div`
   justify-content: space-between;
 `;
 
-const FeatureHeader = styled.h2`
+const Title = styled.h2`
   font-size: 32px;
   font-weight: 500;
   color: white;
   width: 90%;
 `;
 
-const FeatureText = styled.p`
+const Description = styled.p`
   color: white;
   font-size: 18px;
   width: 90%;
 `;
 
-const FeatureListBox = styled.div`
+const ListBox = styled.div`
   width: 100%;
   height: 250px;
   border-top: 1px solid white;
@@ -51,13 +51,13 @@ const FeatureListBox = styled.div`
   justify-content: space-evenly;
 `;
 
-const FeatureListElement = styled.div`
+const ListElement = styled.div`
   width: 100%;
   height: 36px;
   display: flex;
 `;
 
-const FeatureListElementCircle = styled.div`
+const PurpleCircle = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -67,17 +67,17 @@ const FeatureListElementCircle = styled.div`
   background: #b87ee5;
 `;
 
-const RedCircle = styled(FeatureListElementCircle)`
+const RedCircle = styled(PurpleCircle)`
   background: #eb597b;
 `;
 
-const FeatureListElementLabel = styled.p`
+const ElementLabel = styled.p`
   color: white;
   font-size: 18px;
   margin-left: 10px;
 `;
 
-const FeatureButton = styled.button`
+const StyledButton = styled.button`
   width: 35%;
   height: 48px;
   background: white;
@@ -89,33 +89,31 @@ const FeatureButton = styled.button`
 `;
 
 export default () => (
-  <HeaderWrapper>
+  <MainWrapper>
     <HeaderBox>
       <FeatureBox>
-        <FeatureHeader>Facts Why Inkjet Printing Is Very </FeatureHeader>
-        <FeatureText>
-          The moment you think of buying a Web Hosting Plan, you know one
-          thing. So many choices, which one to choose?
-        </FeatureText>
-        <FeatureListBox>
-          <FeatureListElement>
-            <FeatureListElementCircle>
+        <Title>Facts Why Inkjet Printing Is Very </Title>
+        <Description>
+          The moment you think of buying a Web Hosting Plan, you know one thing.
+          So many choices, which one to choose?
+        </Description>
+        <ListBox>
+          <ListElement>
+            <PurpleCircle>
               <img src={clockIcon} alt="icon" />
-            </FeatureListElementCircle>
-            <FeatureListElementLabel>So many choices</FeatureListElementLabel>
-          </FeatureListElement>
-          <FeatureListElement>
+            </PurpleCircle>
+            <ElementLabel>So many choices</ElementLabel>
+          </ListElement>
+          <ListElement>
             <RedCircle>
               <img src={boxIcon} alt="icon" />
             </RedCircle>
-            <FeatureListElementLabel>
-              Whether you would want
-            </FeatureListElementLabel>
-          </FeatureListElement>
-          <FeatureButton>Button Name</FeatureButton>
-        </FeatureListBox>
+            <ElementLabel>Whether you would want</ElementLabel>
+          </ListElement>
+          <StyledButton>Button Name</StyledButton>
+        </ListBox>
       </FeatureBox>
       <img src={iphoneMock} alt="iphone" />
     </HeaderBox>
-  </HeaderWrapper>
-)
+  </MainWrapper>
+);
