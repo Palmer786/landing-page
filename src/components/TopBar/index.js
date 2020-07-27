@@ -95,4 +95,4 @@ export default () => (
       </NavBox>
     </TopBar>
   </TopBarWrapper>
-)
+);
