@@ -7,6 +7,7 @@ import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import ProductionSection from '../components/ProductionSection';
 import FeatureSection from '../components/FeatureSection';
+import CodeSection from '../components/CodeSection';
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Header />
     <ProductionSection />
     <FeatureSection />
+    <CodeSection />
   </Layout>
 );
 
