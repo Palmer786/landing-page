@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import ProductionSection from '../components/ProductionSection';
+import FeatureSection from '../components/FeatureSection';
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <TopBar />
     <Header />
     <ProductionSection />
+    <FeatureSection />
   </Layout>
 );
 
