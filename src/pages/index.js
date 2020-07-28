@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import ProductionSection from '../components/ProductionSection';
 import FeatureSection from '../components/FeatureSection';
 import CodeSection from '../components/CodeSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <ProductionSection />
     <FeatureSection />
     <CodeSection />
+    <TestimonialsSection />
   </Layout>
 );
 
