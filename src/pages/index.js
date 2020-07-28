@@ -9,6 +9,7 @@ import ProductionSection from '../components/ProductionSection';
 import FeatureSection from '../components/FeatureSection';
 import CodeSection from '../components/CodeSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import ClientSection from '../components/ClientSection';
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <FeatureSection />
     <CodeSection />
     <TestimonialsSection />
+    <ClientSection />
   </Layout>
 );
 
