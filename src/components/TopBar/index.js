@@ -54,6 +54,12 @@ const StyledLink = styled(Link)`
   font-size: 13px;
   font-weight: 700;
   color: white;
+  transition: color 0.15s;
+
+  &:hover {
+    transition: color 0.15s;
+    color: #eeeeee;
+  }
 `;
 
 const SignInButton = styled.button`
@@ -65,6 +71,12 @@ const SignInButton = styled.button`
   color: #304156;
   font-size: 15px;
   cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    transition: background 0.15s;
+    background: #f5f5f5;
+  }
 `;
 
 export default () => (
@@ -76,19 +88,19 @@ export default () => (
       <NavBox>
         <ListWrapper>
           <ListElement>
-            <StyledLink to="#">First</StyledLink>
+            <StyledLink to="#production">First</StyledLink>
           </ListElement>
           <ListElement>
-            <StyledLink to="#">Second</StyledLink>
+            <StyledLink to="#features">Second</StyledLink>
           </ListElement>
           <ListElement>
-            <StyledLink to="#">Third</StyledLink>
+            <StyledLink to="#code">Third</StyledLink>
           </ListElement>
           <ListElement>
-            <StyledLink to="#">Fourth</StyledLink>
+            <StyledLink to="#testimonials">Fourth</StyledLink>
           </ListElement>
           <ListElement>
-            <StyledLink to="#">Firth</StyledLink>
+            <StyledLink to="#client">Firth</StyledLink>
           </ListElement>
         </ListWrapper>
         <SignInButton>Sign In</SignInButton>

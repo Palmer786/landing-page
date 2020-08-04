@@ -89,7 +89,7 @@ const Description = styled.p`
 `;
 
 export default () => (
-  <MainWrapper>
+  <MainWrapper id="features">
     <ContentWrapper>
       <Header>Awesome Features</Header>
       <FeatureGrid>

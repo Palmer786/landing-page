@@ -58,7 +58,6 @@ const InputContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
 `;
 
 const StyledInput = styled.input`
@@ -94,6 +93,12 @@ const StyledLink = styled.a`
 
   &:hover {
     color: #004dc6;
+  }
+`;
+
+const Icon = styled.img`
+  &:hover {
+    filter: saturate(5);
   }
 `;
 
@@ -171,10 +176,12 @@ export default () => (
         <Title>Subscribe to newsletter</Title>
         <InputBox>
           <IconContainer>
-            <img src={mailIcon} alt="icon" />
+            <label htmlFor="email">
+              <Icon src={mailIcon} alt="icon" />
+            </label>
           </IconContainer>
           <InputContainer>
-            <StyledInput type="text" placeholder="Email" />
+            <StyledInput type="text" placeholder="Email" id="email" />
           </InputContainer>
         </InputBox>
       </SubscribeBox>

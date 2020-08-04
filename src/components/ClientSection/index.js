@@ -55,8 +55,8 @@ const SecondCircle = styled(Circle)`
   width: 110px;
   height: 110px;
   background: #fafbfb;
-   top: 5px;
-   right: 10%;
+  top: 5px;
+  right: 10%;
 `;
 
 const ThirdCircle = styled(Circle)`
@@ -108,10 +108,17 @@ const StyledButton = styled.button`
   border-radius: 4px;
   width: 25%;
   height: 48px;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #1d9fff;
+    transition: background 0.15s;
+  }
 `;
 
 export default () => (
-  <MainWrapper>
+  <MainWrapper id="client">
     <ContentWrapper>
       <ImageGrid>
         <GridElement>

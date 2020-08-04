@@ -72,17 +72,19 @@ const SliderElement = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: absolute;
   background: white;
   z-index: 1;
   transition: all 0.2s;
+  box-shadow: 0 0 5px 0.1px rgba(225, 225, 225, 0.8);
 
   ${({currentElement, sliderId}) =>
     currentElement === sliderId &&
     css`
       z-index: 3;
-      transform: scale(1.05);
+      transform: scale(1.1);
+      box-shadow: 0 0 5px 0.1px #666;
     `}
 `;
 
@@ -115,7 +117,7 @@ const Name = styled.h4`
   text-align: center;
   color: #304156;
   font-size: 15px;
-  height: 40px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +127,7 @@ const Work = styled.p`
   text-align: center;
   color: #828d99;
   font-size: 15px;
-  height: 30px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -134,12 +136,13 @@ const Work = styled.p`
 const Description = styled.p`
   text-align: center;
   color: #304156;
-  font-size: 15px;
-  height: 100px;
+  font-size: 14px;
+  height: 80px;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  line-height: 1.4;
 `;
 
 export default () => {
@@ -156,7 +159,7 @@ export default () => {
   };
 
   return (
-    <MainWrapper>
+    <MainWrapper id="testimonials">
       <Title>Testimonials</Title>
       <SliderWrapper>
         <SliderButtonLeft>

@@ -86,6 +86,12 @@ const StyledButton = styled.button`
   color: #304156;
   font-size: 15px;
   cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    transition: background 0.15s;
+    background: #f5f5f5;
+  }
 `;
 
 export default () => (

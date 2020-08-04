@@ -62,6 +62,12 @@ const StyledButton = styled.button`
   font-size: 18px;
   border: none;
   cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #1d9fff;
+    transition: background 0.15s;
+  }
 `;
 
 const ImageBox = styled.div`
@@ -72,7 +78,7 @@ const ImageBox = styled.div`
 `;
 
 export default () => (
-  <MainWrapper>
+  <MainWrapper id="code">
     <ContentWrapper>
       <ContentBox>
         <IconContainer>

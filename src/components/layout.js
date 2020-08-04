@@ -9,18 +9,23 @@ import background from '../images/background.png';
 const GlobalStyle = createGlobalStyle`
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: 1920px 917px;
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Archivo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
 }
+
+img {
+  user-select: none;
+}
+
 `;
 
 const theme = {

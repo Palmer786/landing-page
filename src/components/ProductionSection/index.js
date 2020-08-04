@@ -49,7 +49,7 @@ const SubTitle = styled.h2`
 `;
 
 export default () => (
-  <MainWrapper>
+  <MainWrapper id="production">
     <ContentBox>
       <GreenCircle>
         <img src={searchIcon} alt="icon" />
