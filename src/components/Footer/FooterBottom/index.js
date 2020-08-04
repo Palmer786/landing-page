@@ -31,14 +31,26 @@ const LogoBox = styled.div`
   justify-content: space-between;
 `;
 
+const SocialMediaLogo = styled.img`
+  &:hover {
+   filter: saturate(5);
+  }
+`;
+
 export default () => (
   <MainWrapper>
     <ContentWrapper>
       <img src={logo} alt="logo" />
       <LogoBox>
-        <img src={twitterLogo} alt="twitter" />
-        <img src={facebookLogo} alt="facebook" />
-        <img src={instagramLogo} alt="instagram" />
+        <a href="https://twitter.com/" target="_blank">
+          <SocialMediaLogo src={twitterLogo} alt="twitter" />
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <SocialMediaLogo src={facebookLogo} alt="facebook" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <SocialMediaLogo src={instagramLogo} alt="instagram" />
+        </a>
       </LogoBox>
     </ContentWrapper>
   </MainWrapper>

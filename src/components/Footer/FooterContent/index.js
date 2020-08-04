@@ -83,9 +83,18 @@ const HeaderCell = styled.th`
 `;
 
 const TableCell = styled.td`
-  color: #304156;
   font-size: 13px;
   text-align: left;
+`;
+
+const StyledLink = styled.a`
+  color: #304156;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: #004dc6;
+  }
 `;
 
 export default () => (
@@ -102,27 +111,57 @@ export default () => (
         </thead>
         <tbody>
           <tr>
-            <TableCell>Blog</TableCell>
-            <TableCell>Blog</TableCell>
-            <TableCell>Price</TableCell>
-            <TableCell>Price</TableCell>
+            <TableCell>
+              <StyledLink href="#">Blog</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Blog</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Price</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Price</StyledLink>
+            </TableCell>
           </tr>
           <tr>
-            <TableCell>Privacy Policy</TableCell>
-            <TableCell>Privacy Policy</TableCell>
-            <TableCell>Features</TableCell>
-            <TableCell>Features</TableCell>
+            <TableCell>
+              <StyledLink href="#">Privacy Policy</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Privacy Policy</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Features</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Features</StyledLink>
+            </TableCell>
           </tr>
           <tr>
-            <TableCell>About</TableCell>
-            <TableCell>About</TableCell>
-            <TableCell>Review</TableCell>
-            <TableCell>Review</TableCell>
+            <TableCell>
+              <StyledLink href="#">About</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">About</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Review</StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Review</StyledLink>
+            </TableCell>
           </tr>
           <tr>
-            <TableCell>Terms & Cond.</TableCell>
-            <TableCell>Terms & Cond.</TableCell>
-            <TableCell>How It Works</TableCell>
+            <TableCell>
+              <StyledLink href="#">Terms & Cond. </StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">Terms & Cond. </StyledLink>
+            </TableCell>
+            <TableCell>
+              <StyledLink href="#">How It Works </StyledLink>
+            </TableCell>
           </tr>
         </tbody>
       </TableContainer>
