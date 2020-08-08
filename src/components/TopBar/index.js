@@ -9,29 +9,76 @@ const TopBarWrapper = styled.div`
   height: 154px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 const TopBar = styled.nav`
   width: 96%;
   height: 32px;
-  margin: 17px auto 0 auto;
+  margin-top: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 94%;
+  }
+
+  @media (max-width: 768px) {
+    width: 88%;
+  }
 `;
 
 const LogoBox = styled.div`
-  width: 10%;
+  width: 130px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
+const Logo = styled.img`
+  width: 100%;
+  height: 100%;
+  max-height: 18px;
+  max-width: 130px;
+`;
+
 const NavBox = styled.div`
   width: 30%;
   height: 100%;
   display: flex;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+const MobileMenuIcon = styled.div`
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    width: 32px;
+    height: 28px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+`;
+
+const Line = styled.div`
+  display: none;
+
+  :nth-child(2) {
+    width: 70%;
+  }
+
+  @media (max-width: 1024px) {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+  }
 `;
 
 const ListWrapper = styled.ul`
@@ -83,7 +130,7 @@ export default () => (
   <TopBarWrapper>
     <TopBar>
       <LogoBox>
-        <img src={logoImage} alt="logo" />
+        <Logo src={logoImage} alt="logo" />
       </LogoBox>
       <NavBox>
         <ListWrapper>
@@ -105,6 +152,11 @@ export default () => (
         </ListWrapper>
         <SignInButton>Sign In</SignInButton>
       </NavBox>
+      <MobileMenuIcon>
+        <Line />
+        <Line />
+        <Line />
+      </MobileMenuIcon>
     </TopBar>
   </TopBarWrapper>
 );

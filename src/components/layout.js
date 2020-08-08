@@ -12,7 +12,12 @@ html {
   scroll-behavior: smooth;
   background-image: url(${background});
   background-repeat: no-repeat;
-  background-size: 1920px 917px;
+  background-size: 100% 917px;
+  
+    
+  @media (max-width: 1024px) {
+    background-size: 100% 1176px;
+  }
 }
 
 * {

@@ -11,6 +11,10 @@ const MainWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    height: 760px;
+  }
 `;
 
 const ContentWrapper = styled.section`
@@ -19,6 +23,12 @@ const ContentWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+  }
 `;
 
 const ContentBox = styled.div`
@@ -27,6 +37,10 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -51,6 +65,15 @@ const Description = styled.p`
   color: #304156;
   font-size: 18px;
   width: 60%;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -68,6 +91,10 @@ const StyledButton = styled.button`
     background: #1d9fff;
     transition: background 0.15s;
   }
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 `;
 
 const ImageBox = styled.div`
@@ -75,6 +102,16 @@ const ImageBox = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+`;
+
+const StyledImg = styled.img`
+  width: 100%;
+  max-width: 456px;
+  max-height: 292px;
 `;
 
 export default () => (
@@ -92,7 +129,7 @@ export default () => (
         <StyledButton>Purchase</StyledButton>
       </ContentBox>
       <ImageBox>
-        <img src={codeImg} alt="code" />
+        <StyledImg src={codeImg} alt="code" />
       </ImageBox>
     </ContentWrapper>
   </MainWrapper>

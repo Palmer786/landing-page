@@ -6,7 +6,7 @@ import searchIcon from '../../images/search-icon.png';
 
 const MainWrapper = styled.section`
   width: 80%;
-  height: 1010px;
+  height: 1070px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,11 @@ const ContentBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    height: 260px;
+  }
 `;
 
 const GreenCircle = styled.div`
@@ -48,6 +53,12 @@ const SubTitle = styled.h2`
   line-height: 1.7;
 `;
 
+const StyledImg = styled.img`
+  width: 100%;
+  max-width: 948px;
+  max-height: 576px;
+`;
+
 export default () => (
   <MainWrapper id="production">
     <ContentBox>
@@ -61,6 +72,6 @@ export default () => (
         Web Hosting Plan, you know one thing.
       </SubTitle>
     </ContentBox>
-    <img src={productionProject} alt="project" />
+    <StyledImg src={productionProject} alt="project" />
   </MainWrapper>
 );

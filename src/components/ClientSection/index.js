@@ -14,6 +14,10 @@ const MainWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 732px;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -22,6 +26,12 @@ const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 80%;
+    flex-direction: column;
+  }
 `;
 
 const ImageGrid = styled.div`
@@ -87,6 +97,11 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 75%;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h2`
@@ -98,6 +113,11 @@ const Description = styled.p`
   color: #304156;
   font-size: 18px;
   width: 80%;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    text-align: center;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -114,6 +134,18 @@ const StyledButton = styled.button`
   &:hover {
     background: #1d9fff;
     transition: background 0.15s;
+  }
+
+  @media (max-width: 1440px) {
+    width: 40%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 60%;
+  }
+
+  @media (max-width: 768px) {
+    width: 40%;
   }
 `;
 

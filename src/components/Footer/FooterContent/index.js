@@ -9,6 +9,10 @@ const MainWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -27,12 +31,20 @@ const SubscribeBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    align-items: flex-end;
+  }
 `;
 
 const Title = styled.p`
   font-size: 11px;
   font-weight: bold;
   color: #304156;
+
+  @media (max-width: 768px) {
+    align-self: center;
+  }
 `;
 
 const InputBox = styled.div`

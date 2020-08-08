@@ -9,6 +9,10 @@ const MainWrapper = styled.div`
   width: 100%;
   height: 670px;
   background: #fafbfb;
+  
+   @media (max-width: 768px) {
+    height: 764px;
+  }
 `;
 
 const ContentWrapper = styled.section`
@@ -19,6 +23,10 @@ const ContentWrapper = styled.section`
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
+  
+   @media (max-width: 768px) {
+    width: 70%;
+  }
 `;
 
 const Header = styled.h1`
@@ -34,6 +42,14 @@ const FeatureGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 24px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+  }
 `;
 
 const GridElement = styled.div`
@@ -44,6 +60,10 @@ const GridElement = styled.div`
   justify-content: space-evenly;
   align-items: center;
   border-radius: 4px;
+  
+   @media (max-width: 768px) {
+   height: 20%;
+  }
 `;
 
 const GreenCircle = styled.div`

@@ -29,11 +29,19 @@ const LogoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: 15%;
+  }
+
+  @media (max-width: 768px) {
+    width: 20%;
+  }
 `;
 
 const SocialMediaLogo = styled.img`
   &:hover {
-   filter: saturate(5);
+    filter: saturate(5);
   }
 `;
 

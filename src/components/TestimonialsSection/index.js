@@ -29,6 +29,10 @@ const SliderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 
 const SliderButtonLeft = styled.div`
@@ -143,6 +147,10 @@ const Description = styled.p`
   justify-content: center;
   align-items: flex-start;
   line-height: 1.4;
+
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
 `;
 
 export default () => {

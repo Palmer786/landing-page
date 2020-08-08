@@ -7,10 +7,14 @@ import iphoneMock from '../../images/iphonemock.png';
 
 const MainWrapper = styled.header`
   width: 100%;
-  height: 763px;
+  height: 890px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    height: 980px;
+  }
 `;
 
 const HeaderBox = styled.div`
@@ -19,6 +23,13 @@ const HeaderBox = styled.div`
   margin-left: 10%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    margin-left: 0;
+  }
 `;
 
 const FeatureBox = styled.div`
@@ -27,6 +38,12 @@ const FeatureBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    height: 830px;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h2`
@@ -34,12 +51,25 @@ const Title = styled.h2`
   font-weight: 500;
   color: white;
   width: 90%;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 `;
 
 const Description = styled.p`
   color: white;
   font-size: 18px;
   width: 90%;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
 `;
 
 const ListBox = styled.div`
@@ -49,12 +79,25 @@ const ListBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    align-items: center;
+    width: 80%;
+  }
 `;
 
 const ListElement = styled.div`
   width: 100%;
   height: 36px;
   display: flex;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    width: 65%;
+  }
 `;
 
 const PurpleCircle = styled.div`
@@ -92,6 +135,33 @@ const StyledButton = styled.button`
     transition: background 0.15s;
     background: #f5f5f5;
   }
+
+  @media (max-width: 1024px) {
+    width: 60%;
+  }
+`;
+
+const ImageBox = styled.div`
+  width: 60%;
+  max-width: 651px;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+`;
+
+const StyledImg = styled.img`
+  width: 100%;
+  max-width: 651px;
+  max-height: 689px;
+
+  @media (max-width: 1024px) {
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export default () => (
@@ -119,7 +189,9 @@ export default () => (
           <StyledButton>Button Name</StyledButton>
         </ListBox>
       </FeatureBox>
-      <img src={iphoneMock} alt="iphone" />
+      <ImageBox>
+        <StyledImg src={iphoneMock} alt="iphone" />
+      </ImageBox>
     </HeaderBox>
   </MainWrapper>
 );
