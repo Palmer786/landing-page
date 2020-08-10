@@ -82,6 +82,7 @@ const SliderElement = styled.div`
   z-index: 1;
   transition: all 0.2s;
   box-shadow: 0 0 5px 0.1px rgba(225, 225, 225, 0.8);
+  cursor: pointer;
 
   ${({currentElement, sliderId}) =>
     currentElement === sliderId &&
@@ -89,6 +90,7 @@ const SliderElement = styled.div`
       z-index: 3;
       transform: scale(1.1);
       box-shadow: 0 0 5px 0.1px #666;
+      cursor: default;
     `}
 `;
 
@@ -166,6 +168,8 @@ export default () => {
     setCurrentElement((el) => el - 1);
   };
 
+  const setCurrentElementOnClick = (id) => setCurrentElement(id);
+
   return (
     <MainWrapper id="testimonials">
       <Title>Testimonials</Title>
@@ -176,7 +180,11 @@ export default () => {
           </WhiteCircle>
         </SliderButtonLeft>
         <SliderContent>
-          <FirstSliderElement currentElement={currentElement} sliderId={1}>
+          <FirstSliderElement
+            currentElement={currentElement}
+            sliderId={1}
+            onClick={() => setCurrentElementOnClick(1)}
+          >
             <Avatar>
               <PersonImage src={firstPerson} alt="avatar" />
             </Avatar>
@@ -187,7 +195,11 @@ export default () => {
               article could save you from getting in to trouble!
             </Description>
           </FirstSliderElement>
-          <SecondSliderElement currentElement={currentElement} sliderId={2}>
+          <SecondSliderElement
+            currentElement={currentElement}
+            sliderId={2}
+            onClick={() => setCurrentElementOnClick(2)}
+          >
             <Avatar>
               <PersonImage src={secondPerson} alt="avatar" />
             </Avatar>
@@ -199,7 +211,11 @@ export default () => {
               music to your Ipod has more than one pitfall.
             </Description>
           </SecondSliderElement>
-          <ThirdSliderElement currentElement={currentElement} sliderId={3}>
+          <ThirdSliderElement
+            currentElement={currentElement}
+            sliderId={3}
+            onClick={() => setCurrentElementOnClick(3)}
+          >
             <Avatar>
               <PersonImage src={thirdPerson} alt="avatar" />
             </Avatar>
