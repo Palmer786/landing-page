@@ -13,6 +13,10 @@ const MainWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-top: 2px solid #f0f1f2;
+
+  @media (max-width: 520px) {
+    height: 10%;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -21,6 +25,10 @@ const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 320px) {
+    width: 80%;
+  }
 `;
 
 const LogoBox = styled.div`
@@ -36,6 +44,10 @@ const LogoBox = styled.div`
 
   @media (max-width: 768px) {
     width: 20%;
+  }
+
+  @media (max-width: 520px) {
+    width: 35%;
   }
 `;
 

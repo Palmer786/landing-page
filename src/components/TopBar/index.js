@@ -10,6 +10,10 @@ const TopBarWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 320px) {
+    height: 74px;
+  }
 `;
 
 const TopBar = styled.nav`

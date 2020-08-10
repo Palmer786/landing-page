@@ -17,6 +17,12 @@ const MainWrapper = styled.section`
 
   @media (max-width: 768px) {
     height: 732px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: 370px) {
+    height: 833px;
   }
 `;
 
@@ -27,10 +33,18 @@ const ContentWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
+
   @media (max-width: 768px) {
     width: 90%;
-    height: 80%;
-    flex-direction: column;
+    height: 85%;
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 520px) {
+    width: 95%;
   }
 `;
 
@@ -40,11 +54,35 @@ const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
+  @media (max-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+    height: 45%;
+  }
+
+  @media (max-width: 520px) {
+    width: 96%;
+  }
+
+  @media (max-width: 370px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 `;
 
 const GridElement = styled.div`
   width: 100%;
   height: 100%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Circle = styled.div`
@@ -59,6 +97,10 @@ const FirstCircle = styled(Circle)`
   width: 80px;
   height: 80px;
   background: #fafbfb;
+
+  @media (max-width: 370px) {
+    right: 9%;
+  }
 `;
 
 const SecondCircle = styled(Circle)`
@@ -67,6 +109,11 @@ const SecondCircle = styled(Circle)`
   background: #fafbfb;
   top: 5px;
   right: 10%;
+
+  @media (max-width: 370px) {
+    right: 25%;
+    bottom: 15%;
+  }
 `;
 
 const ThirdCircle = styled(Circle)`
@@ -74,6 +121,12 @@ const ThirdCircle = styled(Circle)`
   height: 64px;
   background: #f2f4f4;
   top: 40%;
+
+  @media (max-width: 370px) {
+    top: 0;
+    bottom: 20%;
+    left: 12%;
+  }
 `;
 
 const FourthCircle = styled(Circle)`
@@ -81,6 +134,11 @@ const FourthCircle = styled(Circle)`
   height: 126px;
   background: #f2f4f4;
   bottom: 7%;
+
+  @media (max-width: 370px) {
+    bottom: 0;
+    top: 5%;
+  }
 `;
 
 const FifthCircle = styled(Circle)`
@@ -89,6 +147,11 @@ const FifthCircle = styled(Circle)`
   background: #fafbfb;
   left: 12%;
   bottom: 2%;
+
+  @media (max-width: 370px) {
+    left: 22%;
+    bottom: 0;
+  }
 `;
 
 const ContentBox = styled.div`
@@ -101,6 +164,12 @@ const ContentBox = styled.div`
   @media (max-width: 768px) {
     width: 75%;
     align-items: center;
+    height: 45%;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
   }
 `;
 

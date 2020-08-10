@@ -9,8 +9,8 @@ const MainWrapper = styled.div`
   width: 100%;
   height: 670px;
   background: #fafbfb;
-  
-   @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     height: 764px;
   }
 `;
@@ -23,9 +23,17 @@ const ContentWrapper = styled.section`
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
-  
-   @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     width: 70%;
+  }
+
+  @media (max-width: 520px) {
+    width: 85%;
+  }
+
+  @media (max-width: 320px) {
+    width: 92%;
   }
 `;
 
@@ -60,9 +68,9 @@ const GridElement = styled.div`
   justify-content: space-evenly;
   align-items: center;
   border-radius: 4px;
-  
-   @media (max-width: 768px) {
-   height: 20%;
+
+  @media (max-width: 768px) {
+    height: 20%;
   }
 `;
 

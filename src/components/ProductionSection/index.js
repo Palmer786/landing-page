@@ -5,13 +5,17 @@ import productionProject from '../../images/production-project.png';
 import searchIcon from '../../images/search-icon.png';
 
 const MainWrapper = styled.section`
-  width: 80%;
+  width: 95%;
   height: 1070px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  @media (max-width: 520px) {
+    height: 970px;
+  }
 `;
 
 const ContentBox = styled.div`
@@ -22,9 +26,23 @@ const ContentBox = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 1024px) {
+    height: 240px;
+    width: 60%;
+  }
+
   @media (max-width: 768px) {
     width: 70%;
     height: 260px;
+  }
+
+  @media (max-width: 520px) {
+    width: 90%;
+    height: 310px;
+  }
+
+  @media (max-width: 320px) {
+    height: 340px;
   }
 `;
 
@@ -43,14 +61,22 @@ const Title = styled.h1`
   font-weight: bold;
   color: #304156;
   text-align: center;
+
+  @media (max-width: 320px) {
+    font-size: 30px;
+  }
 `;
 
 const SubTitle = styled.h2`
-  font-weight: bold;
+  font-weight: 400;
   color: #304156;
   text-align: center;
   font-size: 18px;
   line-height: 1.7;
+
+  @media (max-width: 320px) {
+    font-size: 17px;
+  }
 `;
 
 const StyledImg = styled.img`

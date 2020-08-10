@@ -29,6 +29,10 @@ const ContentWrapper = styled.section`
     height: 90%;
     flex-direction: column;
   }
+
+  @media (max-width: 320px) {
+    height: 95%;
+  }
 `;
 
 const ContentBox = styled.div`
@@ -40,6 +44,14 @@ const ContentBox = styled.div`
 
   @media (max-width: 1024px) {
     align-items: center;
+  }
+
+  @media (max-width: 520px) {
+    width: 90%;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
   }
 `;
 
@@ -112,6 +124,10 @@ const StyledImg = styled.img`
   width: 100%;
   max-width: 456px;
   max-height: 292px;
+
+  @media (max-width: 520px) {
+    transform: scale(1.5);
+  }
 `;
 
 export default () => (

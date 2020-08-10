@@ -15,6 +15,16 @@ const MainWrapper = styled.header`
   @media (max-width: 768px) {
     height: 980px;
   }
+
+  @media (max-width: 520px) {
+    height: 860px;
+  }
+
+  @media (max-width: 320px) {
+    height: 1140px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 `;
 
 const HeaderBox = styled.div`
@@ -30,6 +40,18 @@ const HeaderBox = styled.div`
     height: 900px;
     margin-left: 0;
   }
+
+  @media (max-width: 768px) {
+    height: 970px;
+  }
+
+  @media (max-width: 520px) {
+    width: 90%;
+  }
+
+  @media (max-width: 320px) {
+    width: 96%;
+  }
 `;
 
 const FeatureBox = styled.div`
@@ -43,6 +65,14 @@ const FeatureBox = styled.div`
     width: 80%;
     height: 830px;
     align-items: center;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    height: 500px;
   }
 `;
 
@@ -90,14 +120,6 @@ const ListElement = styled.div`
   width: 100%;
   height: 36px;
   display: flex;
-
-  @media (max-width: 1024px) {
-    width: 80%;
-  }
-
-  @media (max-width: 768px) {
-    width: 65%;
-  }
 `;
 
 const PurpleCircle = styled.div`
@@ -148,6 +170,14 @@ const ImageBox = styled.div`
 
   @media (max-width: 768px) {
     width: 80%;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    max-height: 350px;
   }
 `;
 

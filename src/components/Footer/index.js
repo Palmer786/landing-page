@@ -12,6 +12,10 @@ const MainWrapper = styled.footer`
   justify-content: flex-end;
   align-items: center;
   background: #fafbfb;
+
+  @media (max-width: 520px) {
+    height: 660px;
+  }
 `;
 
 export default () => (

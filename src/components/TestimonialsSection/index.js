@@ -33,6 +33,10 @@ const SliderWrapper = styled.div`
   @media (max-width: 1024px) {
     width: 90%;
   }
+
+  @media (max-width: 520px) {
+    width: 95%;
+  }
 `;
 
 const SliderButtonLeft = styled.div`
@@ -41,6 +45,10 @@ const SliderButtonLeft = styled.div`
   display: flex;
   align-items: center;
   background: #fafbfb;
+
+  @media (max-width: 520px) {
+    width: 10%;
+  }
 `;
 
 const SliderButtonRight = styled(SliderButtonLeft)`
@@ -68,6 +76,10 @@ const SliderContent = styled.div`
   background: white;
   display: flex;
   position: relative;
+
+  @media (max-width: 520px) {
+    width: 80%;
+  }
 `;
 
 const SliderElement = styled.div`
@@ -91,7 +103,15 @@ const SliderElement = styled.div`
       transform: scale(1.1);
       box-shadow: 0 0 5px 0.1px #666;
       cursor: default;
-    `}
+
+      @media (max-width: 520px) {
+        transform: scale(1);
+      }
+    `};
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 `;
 
 const FirstSliderElement = styled(SliderElement)``;
@@ -99,10 +119,18 @@ const FirstSliderElement = styled(SliderElement)``;
 const SecondSliderElement = styled(SliderElement)`
   margin-left: 27.5%;
   z-index: 2;
+
+  @media (max-width: 520px) {
+    margin-left: 0;
+  }
 `;
 
 const ThirdSliderElement = styled(SliderElement)`
   margin-left: 54.5%;
+
+  @media (max-width: 520px) {
+    margin-left: 0;
+  }
 `;
 
 const Avatar = styled.div`
@@ -207,8 +235,7 @@ export default () => {
             <Work>Apple</Work>
             <Description>
               Do you want to download free song for ipod? 👍 If so, reading this
-              article could save you from getting in to trouble! Downloading
-              music to your Ipod has more than one pitfall.
+              article could save you from getting in to trouble!
             </Description>
           </SecondSliderElement>
           <ThirdSliderElement
