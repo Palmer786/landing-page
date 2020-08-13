@@ -15,7 +15,7 @@ const MainWrapper = styled.div`
   border-top: 2px solid #f0f1f2;
 
   @media (max-width: 520px) {
-    height: 10%;
+    height: 15%;
   }
 `;
 

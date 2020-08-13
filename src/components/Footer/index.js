@@ -14,7 +14,7 @@ const MainWrapper = styled.footer`
   background: #fafbfb;
 
   @media (max-width: 520px) {
-    height: 660px;
+    height: 510px;
   }
 `;
 

@@ -17,6 +17,8 @@ const MainWrapper = styled.div`
   @media (max-width: 520px) {
     height: 80%;
     width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
   }
 `;
 
@@ -29,6 +31,8 @@ const ContentWrapper = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 90%;
+    height: 65%;
   }
 `;
 
@@ -40,6 +44,11 @@ const GridElement = styled.table`
 const SubscribeWrapper = styled.div`
   width: 40%;
   height: 100%;
+  
+  @media (max-width: 520px) {
+    width: 90%;
+    height: 25%;
+  }
 `;
 
 const SubscribeBox = styled.div`
@@ -54,12 +63,12 @@ const SubscribeBox = styled.div`
   }
 
   @media (max-width: 520px) {
-    height: 15%;
+    height: 60%;
   }
 `;
 
 const Title = styled.p`
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   color: #304156;
 
@@ -78,7 +87,7 @@ const InputBox = styled.div`
   justify-content: space-between;
 
   @media (max-width: 520px) {
-    height: 35%;
+    height: 55%;
   }
 `;
 
