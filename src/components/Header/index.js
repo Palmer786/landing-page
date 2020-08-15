@@ -12,18 +12,24 @@ const MainWrapper = styled.header`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+    padding-top: 250px;
+  }
+
   @media (max-width: 768px) {
     height: 980px;
   }
 
   @media (max-width: 520px) {
     height: 860px;
+    padding-top: 350px;
   }
 
   @media (max-width: 320px) {
     height: 1140px;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 150px;
   }
 `;
 
