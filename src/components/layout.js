@@ -33,11 +33,7 @@ img {
 
 `;
 
-const theme = {
-  colors: {
-    main: '#333',
-  },
-};
+const theme = {};
 
 const Layout = ({children}) => {
   const data = useStaticQuery(graphql`
