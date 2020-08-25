@@ -56,6 +56,7 @@ const FirstCircle = styled(Circle)`
   width: 80px;
   height: 80px;
   background: #fafbfb;
+  animation: FloatingLogo 2s linear infinite;
 
   @media (max-width: 370px) {
     right: 9%;
@@ -68,10 +69,13 @@ const SecondCircle = styled(Circle)`
   background: #fafbfb;
   top: 5px;
   right: 10%;
+  animation: FloatingLogo 2.5s linear infinite;
 
   @media (max-width: 370px) {
     right: 25%;
     bottom: 15%;
+    width: 84px;
+    height: 84px;
   }
 `;
 
@@ -80,6 +84,7 @@ const ThirdCircle = styled(Circle)`
   height: 64px;
   background: #f2f4f4;
   top: 40%;
+  animation: FloatingLogo 1.5s linear infinite;
 
   @media (max-width: 370px) {
     top: 0;
@@ -93,10 +98,13 @@ const FourthCircle = styled(Circle)`
   height: 126px;
   background: #f2f4f4;
   bottom: 7%;
+  animation: FloatingLogo 3s linear infinite;
 
   @media (max-width: 370px) {
     bottom: 0;
     top: 5%;
+    height: 104px;
+    width: 104px;
   }
 `;
 
@@ -106,10 +114,13 @@ const FifthCircle = styled(Circle)`
   background: #fafbfb;
   left: 12%;
   bottom: 2%;
+  animation: FloatingLogo 3.5s linear infinite;
 
   @media (max-width: 370px) {
     left: 22%;
     bottom: 0;
+    width: 116px;
+    height: 116px;
   }
 `;
 
