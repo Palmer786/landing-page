@@ -10,6 +10,7 @@ const FeatureBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  animation: MoveToRight 1.5s ease-in-out;
 
   @media (max-width: 1024px) {
     width: 80%;

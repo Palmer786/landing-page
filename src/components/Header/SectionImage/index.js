@@ -7,6 +7,7 @@ const ImageBox = styled.div`
   width: 60%;
   max-width: 651px;
   height: 100%;
+  animation: MoveToLeft 1.5s ease-in-out;
 
   @media (max-width: 768px) {
     width: 80%;

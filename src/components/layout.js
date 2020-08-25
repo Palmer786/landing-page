@@ -11,7 +11,7 @@ html {
   background-image: url(${background});
   background-repeat: no-repeat;
   background-size: 100% 917px;
-  
+  overflow-x: hidden;
     
   @media (max-width: 1024px) {
     background-size: 100% 1176px;
@@ -30,26 +30,33 @@ img {
 }
 
 @keyframes FloatingLogo {
-0% { transform: rotate(0deg) translateX(10px) rotate(0deg); box-shadow: 0 0 18px 0  rgba(0,0,0,0.3)}
+    0%  { transform: rotate(0deg) translateX(10px) rotate(0deg); box-shadow: 0 0 18px 0  rgba(0,0,0,0.3)}
     25%   { transform: rotate(90deg) translateX(10px) rotate(-90deg); box-shadow: 0 0 18px 0 rgba(0,0,0,0.3)}
     50%   { transform: rotate(180deg) translateX(10px) rotate(-180deg); box-shadow: 0 0 18px 0  rgba(0,0,0,0.3)}
     75%   { transform: rotate(270deg) translateX(10px) rotate(-270deg); box-shadow: 0 -0 18px 0  rgba(0,0,0,0.3)}
     100%   { transform: rotate(360deg) translateX(10px) rotate(-360deg); box-shadow:0 0 18px 0  rgba(0,0,0,0.3)}
 }
 
-@keyframes float {
-0% {
-box-shadow: 0 3px 25px 0 rgba(0,0,0,0.6);
-transform: translatey(0);
-}
-50% {
-box-shadow: 0 15px 25px 0 rgba(0,0,0,0.2);
-transform: translatey(-20px);
-}
-100% {
-box-shadow: 0 3px 25px 0 rgba(0,0,0,0.6);
-transform: translatey(0);
-}
+ @keyframes MoveToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+
+@keyframes MoveToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 `;
 
